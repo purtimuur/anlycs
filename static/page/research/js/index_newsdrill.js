@@ -139,7 +139,6 @@ index_newsdrill.fill_list_article 	= function(){
 	var list_news_analysis 		= window.list_news_analysis.reverse() || []
 
 	var list_news_analysis_html = ''
-	console.log(list_news_analysis)
 	for(var i=0;i<Math.min(list_news_analysis.length,15);i++){
 		var dic_account 		= list_news_analysis[i]
 		list_news_analysis_html	+= fill_template_account(dic_account)

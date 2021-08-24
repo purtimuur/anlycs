@@ -2400,5 +2400,4 @@ https://twitter.com/santiagoroel/status/1362107571419508736
 
 
 ]
-console.log(list_news_analysis)
 
