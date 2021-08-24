@@ -1,0 +1,26 @@
+.header_placeholder{
+	padding: 20px 0px 0px;
+}
+.column_container{
+	width: 95%;
+}
+.second_column{
+	width: 100%;margin-left:0;
+}
+.enter_tagline{
+	margin: 50px auto 0;
+	display: block;
+	width: 70%;
+	text-align: center;
+	font-size: 25px;
+}
+@media screen and (max-width: 950px) {
+	.enter_tagline{
+		font-size: 17px;
+	}
+}
+.enter_btn{
+	width:200px;height:20px;background-color:black;display:block;
+	margin:40px auto 20px;float:none;text-align:center; padding:10px 0;
+	color: white/*rgb(0,141,200,0.8)*/;cursor:pointer;
+}

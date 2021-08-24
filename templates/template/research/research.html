@@ -1,0 +1,50 @@
+ <html>
+	<head>
+	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" type="text/css" href="/static/css/all.css">
+		<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+		<link rel="stylesheet" type="text/css" href="/static/css/style.index.css">
+		
+
+	</head>
+	<body>
+		
+	</body>
+	<script src="/static/js/utils/library/jquery-3.2.0.min.js"></script>
+	<script src="/static/js/utils/library/mustache.js"></script>
+	<script src="/static/js/utils/library/mithril.js"></script>
+	<script src="/static/js/utils/utils.js"></script>
+	<script src="/static/js/utils/utils.common.js"></script>
+	<script src="/static/js/utils/utils.template.js"></script>
+	
+	<script src="/static/page/research/js/news_analysis.js"></script>
+	<script src="/static/page/research/js/index_newsdrill.js"></script>
+	<script>
+		var root = $('body')[0] 	//document.body
+		m.render(root,
+			[
+				m('div',{class:"header_fixed"},
+					[m('div',{class:"logo_default",onclick:function(){ window.location='/'}},'ANLYCS')] ),
+				m('div',{class:"header_placeholder"},''),
+				m('div',{class:"column_container"},[
+					m('div',{class:"first column"},[
+						m('div',{class:"aside_block"},[
+							m('div',{class:"aside_title"},"From News to Trades"),
+							m('div',{class:"aside_desc"},"Filtering facts to extract actionnable insights"),
+						]),
+					]) 
+					,
+					m('div',{class:"second column"},[
+						m('div',{class:"list_news_analysis"},'')
+					]) 
+				]),
+			]
+		)
+		
+		index_newsdrill.fill_list_article()		
+		
+	</script>
+	
+</html>
